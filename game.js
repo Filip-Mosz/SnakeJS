@@ -22,5 +22,9 @@ window.requestAnimationFrame(main);
 function render(){
     gameBoard.innerHTML = '';
     drawSnake(gameBoard);
+    drawFood(gameBoard);
 }
-function update(){ updateSnake(); }
+function update(){
+    updateSnake();
+    updateFood();
+}
